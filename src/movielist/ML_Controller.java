@@ -20,6 +20,14 @@ public class ML_Controller extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		try {
+			
+			int page = 1;
+			
+			if(request.getParameter("page")!=null)
+				page = Integer.parseInt(request.getParameter("page"));
+			
+			request.setAttribute("pageNow", page);
+			
 			String service = request.getRequestURI().substring((
 					request.getContextPath()+"/movielist/").length());
 			if(service.equals(""))

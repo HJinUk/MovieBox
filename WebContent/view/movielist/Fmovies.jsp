@@ -9,13 +9,14 @@
 <body>
 <div class="container">
 	<div class="wapper">
-	<ul>
-		<li><jsp:include page="mltags.jsp"></jsp:include></li>
-	</ul>
-		
+
 		<div>상영예정작</div>
+		
+		<div>
+			<jsp:include page="mltags.jsp"></jsp:include>
+		</div>
+		
 	</div>
-	
 </div>
 
 
