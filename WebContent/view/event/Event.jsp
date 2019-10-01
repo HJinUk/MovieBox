@@ -1,7 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-
-    pageEncoding="UTF-8"%>
-
+	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
@@ -27,7 +25,7 @@
 									<td class="event_title">${dto.title }</td>
 								</tr>
 								<tr>
-									<td><a href="detail?eid=${dto.eid }"><img src="../m_img/event/${dto.title_img }" alt="" /></a></td>
+									<td><a href="Detail?eid=${dto.eid }"><img src="../m_img/event/${dto.title_img }" alt="" /></a></td>
 								</tr>
 								<tr>
 									<td>${dto.start_ev }~${dto.finish_ev }</td>
@@ -42,10 +40,9 @@
 					</c:forEach>
 				</tr>
 			</table>
-   
+
 
 		</div>
 	</div>
-
 </body>
 </html>

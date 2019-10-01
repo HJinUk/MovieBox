@@ -8,8 +8,8 @@
 </head>
 <body>
 		
-		<a href="../../mainProj/event/">현재이벤트</a>
-		<a href="../../mainProj/event/fevent">지난이벤트</a>
+		<a href="../../JsProj/event/">현재이벤트</a>
+		<a href="../../JsProj/event/fevent">지난이벤트</a>
 		
 </body>
 </html>

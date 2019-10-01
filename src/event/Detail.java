@@ -5,12 +5,14 @@ import javax.servlet.http.HttpServletResponse;
 
 import di.MB_Action;
 
-public class Event implements MB_Action {
+public class Detail implements MB_Action {
 
 	@Override
 	public void excute(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		// TODO Auto-generated method stub
-		request.setAttribute("dto", new EventDAO().List());
+		
+		int id = Integer.parseInt(request.getParameter("eid"));
+		request.setAttribute("dto", new EventDAO().detail(id));
 	}
 
 }
