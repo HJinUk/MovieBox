@@ -13,7 +13,7 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
-<%
+<% 
 	ArrayList<GenresDTO> marr = new GenresDAO().list();
 	ArrayList<TheaterDTO> aarr = new TheaterDAO().arealist();
 	ArrayList<TheaterDTO> tarr = new TheaterDAO().list();

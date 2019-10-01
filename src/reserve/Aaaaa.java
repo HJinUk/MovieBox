@@ -29,8 +29,7 @@ public class Aaaaa implements MB_Action {
         
         
         jj+="]";
-        
-     System.out.println(jj);
+ 
 
         out.print(jj);
         out.flush();

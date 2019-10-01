@@ -10,6 +10,7 @@ public class ReserveDTO {
 	Date date,open;
 	String seatnumber,name;
 	
+	
 	SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 public ReserveDTO() {
 	// TODO Auto-generated constructor stub

@@ -8,6 +8,7 @@
 <title>Insert title here</title>
 <link rel="stylesheet" href="../view/csjs/style.css" type="text/css">
 <script src="../view/csjs/js.js"></script>
+<script src="../view/csjs/jquery-3.4.1.min.js"></script>
 </head>
 <body>
   

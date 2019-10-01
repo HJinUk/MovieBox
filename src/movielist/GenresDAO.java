@@ -68,7 +68,38 @@ public class GenresDAO {
 		
 		return res;
 	}
-	
+	public ArrayList<GenresDTO> list(){
+        ArrayList<GenresDTO> res = new ArrayList<GenresDTO>();
+        
+        try {
+           
+           sql = "select * from genres";
+                        
+           ptmt = con.prepareStatement(sql);
+          
+       
+           
+           rs = ptmt.executeQuery();
+           
+           while(rs.next()) {
+              
+              GenresDTO dto = new GenresDTO();
+              
+              dto.setGcode(rs.getInt("gcode"));
+              dto.setGenre(rs.getString("genre"));
+              
+              res.add(dto);
+              
+           }
+        } catch (Exception e) {
+           // TODO Auto-generated catch block
+           e.printStackTrace();
+        }finally {
+           close();
+        }
+        
+        return res;
+     }
 	void close() {	
 		if(rs!=null)try {rs.close();} catch (SQLException e) {}
 		if(ptmt!=null)try {ptmt.close();} catch (SQLException e) {}

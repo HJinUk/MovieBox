@@ -77,6 +77,39 @@ public class MovieListDAO {
 		
 	}
 	
+	public ArrayList<MovieListDTO> list(){
+	      ArrayList<MovieListDTO> res = new ArrayList<MovieListDTO>();
+	      
+	      try {
+	         
+	         sql = "select * from movielist ";
+	         
+	         ptmt = con.prepareStatement(sql);
+	         
+	         rs = ptmt.executeQuery();
+	         
+	         while(rs.next()) {
+	            
+	            MovieListDTO dto = new MovieListDTO();
+	            
+	            dto.setMid(rs.getInt("mid"));
+	            dto.setName(rs.getString("name"));
+	            dto.setYear(rs.getInt("year"));
+	            
+	            res.add(dto);
+	            
+	         }
+	      } catch (SQLException e) {
+	         // TODO Auto-generated catch block
+	         e.printStackTrace();
+	      }finally {
+	         close();
+	      }
+	      
+	      return res;
+	      
+	   }
+	
 	public ArrayList<MovieListDTO> Beforelist(int start, int limit){
 		ArrayList<MovieListDTO> res = new ArrayList<MovieListDTO>();
 		

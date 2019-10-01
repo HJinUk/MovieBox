@@ -36,32 +36,11 @@ public class R_Controller extends HttpServlet {
 			MB_Action action = (MB_Action)Class.forName("reserve."+a).newInstance();
 			action.excute(request, response);
 
-			if(!a.equals("Aaaaa")) {
+		
 			RequestDispatcher dispatcher = request.getRequestDispatcher("../view/template.jsp");
 			dispatcher.forward(request, response);
-			}
-//			response.setContentType("text/text;charset=euc-kr");
-//	         
-//	         PrintWriter out =response.getWriter();
-//	         String jj="[";
-//	         
-//	         ArrayList<ReserveDTO> res = new ReserveDAO().area();
-//
-//	         
-//	         for(int i =0;i<res.size(); i++){
-//	            jj+=res.get(i).getJSON();
-//	            if(i<res.size()-1)
-//	               jj+=",";
-//	            
-//	         }
-//	         
-//	         
-//	         jj+="]";
-//	         
-//	      
-//
-//	         out.print(jj);
-//	         out.flush();
+			
+
 			
 		} catch (Exception e) {
 
