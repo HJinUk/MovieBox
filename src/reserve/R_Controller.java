@@ -1,6 +1,8 @@
 package reserve;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.ArrayList;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -21,6 +23,7 @@ public class R_Controller extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		try {
+			
 			String service = request.getRequestURI().substring((
 					request.getContextPath()+"/reserve/").length());
 			if(service.equals(""))
@@ -33,10 +36,32 @@ public class R_Controller extends HttpServlet {
 			MB_Action action = (MB_Action)Class.forName("reserve."+a).newInstance();
 			action.excute(request, response);
 
-			
+			if(!a.equals("Aaaaa")) {
 			RequestDispatcher dispatcher = request.getRequestDispatcher("../view/template.jsp");
 			dispatcher.forward(request, response);
-			
+			}
+//			response.setContentType("text/text;charset=euc-kr");
+//	         
+//	         PrintWriter out =response.getWriter();
+//	         String jj="[";
+//	         
+//	         ArrayList<ReserveDTO> res = new ReserveDAO().area();
+//
+//	         
+//	         for(int i =0;i<res.size(); i++){
+//	            jj+=res.get(i).getJSON();
+//	            if(i<res.size()-1)
+//	               jj+=",";
+//	            
+//	         }
+//	         
+//	         
+//	         jj+="]";
+//	         
+//	      
+//
+//	         out.print(jj);
+//	         out.flush();
 			
 		} catch (Exception e) {
 
