@@ -1,0 +1,308 @@
+
+a:link{
+	color: black;
+	text-decoration: none;
+}
+a:visited{
+	color: black;
+	text-decoration: none;
+}
+a:hover{
+	color: blue;
+	text-decoration: none;
+}
+.lumenu{
+	
+	text-align: right;
+	font-size: 12px;
+	position: fixed;
+}
+.lumenu ul li {
+	width:80px;
+
+	
+}
+div {
+	width: 100%;
+	/* border: 1px solid #000; */
+	text-align: center;
+}
+
+.wapper{
+		
+	display: inline-block;
+	
+}
+
+ul{
+	list-style: none;
+	display: inline-block;
+	text-align: center;
+}
+
+li {
+	float: left;
+	width: 180px;
+	
+}
+.wrapper{
+	
+	min-height: 450px;
+	text-align: center;
+}
+
+
+.header{
+	border-bottom: 3px solid #eee;
+	margin-bottom: 30px;
+}
+
+.footer{
+	border-top: 3px solid #eee;
+	margin-top: 30px;
+	
+}
+.foot{
+	display: -webkit-inline-box;
+	
+}
+.foot td img{
+	border-right: 2px solid #eee;
+}
+
+.company{
+	
+	font-size: 35px;
+	
+}
+
+.footimg{
+	padding: 20px;
+	width: 100px;
+}
+
+
+.logo {
+	
+	padding: 20px;
+	width: 200px;
+	
+}
+.ccc {
+	text-align: center;
+	display: -webkit-inline-box;
+}
+
+.ccc tr td{
+	width: 50px;
+	height: 50px;
+}
+.mymenu li:last-child {
+	border-right: none;
+}
+
+.mainmenu{
+	width: 200px;
+	height: 20px;
+	overflow: hidden;
+	text-align: center;
+	background: #fff;
+	transition:1.0s;
+	float: left;
+	 border-right: 1px solid #eee;
+}
+
+
+.mainmenu>h1{
+	padding : 10px;
+}
+
+home_ul,home_li{
+ 	list-style:none;
+}
+
+.slide{
+	height:750px;
+	overflow:hidden;
+}
+
+.slide ul{
+	height:100%;
+}
+
+.slide li{
+	height:100%;
+}
+
+.login{
+	display: inline-block;
+	padding-top: 80px;
+	color: #044675;
+}
+
+.login td {
+	
+	padding: 10px;
+	
+}
+
+.login tr td:first-child{
+	
+	text-align: left;
+	
+}
+
+.join{
+	display: inline-block;
+	color: #044675;
+}
+
+.join td {
+	
+	padding: 10px;
+	padding-top: 50px;
+}
+
+.join tr td:first-child{
+	
+	text-align: left;
+	
+}
+.join tr td:last-child{
+	
+	text-align: left;
+	
+}
+
+.loginimg{
+	
+	width: 400px;
+}
+.loginForm{
+	
+	height: 20px;
+	font-size: 20px;
+	boder-bottom:1px;
+	border-color: #0070c0;
+	border-left-style: none;
+	border-right-style: none;
+	border-top-style: none;
+
+}
+
+.loginbtn{
+	
+	padding: 25px;
+	background-color:transparent;
+	border-color: #0070c0;
+	border-radius: 20px;
+	font-size: 20px;
+	color: #044675;
+}
+
+.joinbtn{
+	
+	padding:5px;
+	background-color:transparent;
+	border-color: #0070c0;
+	color: #044675;
+	border-radius: 10px;
+
+}
+
+.joinbtn2{
+	width:500px;
+	padding:5px;
+	background-color:transparent;
+	border-color: #0070c0;
+	color: #044675;
+	font-size: 20px;
+	border-radius: 8px;
+}
+
+.notice_table{
+	display: inline-block;
+	color: #044675;
+	padding-top: 50px;
+
+}
+
+.notice_table td:nth-child(3){
+	text-align: left;
+}
+
+.notice_table th{
+	
+	font-size: 20px;
+	border-bottom: 2px solid #0070c0;
+}
+
+.notice_table td{
+	
+	border-bottom: 1px solid #eee;
+	border-right: 1px solid #eee;
+}
+
+.notice_table td:last-child{
+
+	border-right: none;
+}
+
+
+.notice_table tr{
+	
+	height: 30px;
+}
+
+.notice_table tr:first-child{
+	
+	height: 40px;
+	
+}
+
+.notice_table button{
+	
+	width : 60px;	
+	height: 30px;
+	margin: 10px;
+}
+
+.write_table{
+	
+	display: inline-block;
+	color: #044675;
+	
+}
+
+.write_table th{
+	
+	width: 50px;
+}
+
+.write_table td{
+	
+	text-align: left;
+	padding: 20px 5px;
+	
+}
+
+.write_table input,
+.write_table textarea{
+	
+	width: 500px;
+	
+}
+
+.write_table button{
+	
+	width : 60px;	
+	height: 30px;
+	margin: 10px;
+}
+
+.write_table{
+	
+
+}
+
+
