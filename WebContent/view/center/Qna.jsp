@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>문의 및 답변</title>
 </head>
 <body>
 <div class="container">
@@ -12,11 +12,29 @@
 	<ul>
 		<li><jsp:include page="cttags.jsp"></jsp:include></li>
 	</ul>
-		
-		
-		<div>Qna</div>
+
+
+	
+	<div>질문 및 답변</div>
+	
+	<div>
+			<tr align="center">
+				<td colspan="5">
+				
+					<td>번호</td>
+					<td>제목</td>
+					<td>작성자</td>
+					<td>작성일</td>
+					<td>구분</td>
+					<td>파일</td>
+				</td>	
+			</tr>
 	</div>
 	
+	
+	
+
+	</div>
 </div>
 </body>
 </html>

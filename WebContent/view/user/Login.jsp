@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Login</title>
 </head>
 <body>
 <div class="container">
@@ -12,10 +12,16 @@
 	
 	
 	
-		로그인
+	
+	
+	로그인
+	<form action="../user/LoginMain" method="post">
 		
-		
-		
+		id<input type="text" name="id" />
+		pw<input type="text" name="pw"  />
+		  <input type="submit" value="로그인" />
+		  
+	</form>
 		
 	</div>
 </div>

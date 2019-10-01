@@ -24,6 +24,7 @@ public class U_Controller extends HttpServlet {
 			String service = request.getRequestURI().substring((
 					request.getContextPath()+"/user/").length());
 			
+			
 			String a = (service.charAt(0)+"").toUpperCase()+service.substring(1);			
 			
 			request.setAttribute("mainUrl", "user/"+a);

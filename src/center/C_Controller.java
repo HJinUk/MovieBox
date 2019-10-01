@@ -20,6 +20,13 @@ public class C_Controller extends HttpServlet {
  
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		try {
+			
+			int page = 1;
+			if(request.getParameter("page")!=null)
+				page = Integer.parseInt(request.getParameter("page"));
+			request.setAttribute("page", page);
+			
+			
 			String service = request.getRequestURI().substring((
 					request.getContextPath()+"/center/").length());
 			if(service.equals(""))
